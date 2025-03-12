@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - LuminaCraft</title>
+    <link rel="stylesheet" href="../css/estilos.css"> 
+</head> <!-- No es esencialmente perceptible en la página web pero es muy importante para el funcionamiento del HTML -->
+<body> <!-- Cuerpo del HTML -->
+<header> <!-- El encabezado -->
+        <div class="logo"><img src="../imagenes/logo_empresa/logo.png" alt="LuminaCraft" width="130" height="auto"></div> <!-- Div con el logo de la empresa -->
+        <nav> <!-- Etiqueta que permite navegar o saltar entre la lista -->
+            <ul> <!-- Lista con links para navegar entre ellas -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li class="active"><a href="presupuestos.html">Presupuestos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+</header>
+    <main> <!-- Contenido de la página -->
+        <h1>Solicita tu presupuesto</h1> <!-- Título de la página -->
+        <strong>Para solicitar su presupuesto complete el siguiente formulario:</strong>
+        <br>
+        <form action="#" method="post">  <!-- Formulario -->
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" required pattern="[0-9]{9}">
+
+            <label for="mensaje">Solicite más información:</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+
+            <label for="privacidad">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                Acepto la Política de Privacidad
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+        <section id="faq"> <!-- Sección de preguntas frecuentes -->          
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cuánto tiempo tarda en recibir un presupuesto?</h3>
+                <p>Normalmente respondemos a las solicitudes de presupuesto en un plazo de 24 a 48 horas.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué información necesito proporcionar para obtener un presupuesto?</h3>
+                <p>Por favor, proporcione su nombre, correo electrónico, teléfono y una descripción detallada de su proyecto.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Ofrecen servicios de instalación?</h3>
+                <p>Sí, ofrecemos servicios de instalación profesional para todos nuestros productos de iluminación.</p>
+            </div>
+        </section>
+    </main>
+    <footer> <!-- Pie de página -->
+        <br> <!-- Salto de línea -->
+        <strong>Redes</strong> <!-- Párrafo de redes en negrita -->
+        <div class="social-icons"> <!-- Div de iconos de las redes -->
+            <br> <!-- Salto de línea -->
+            <!-- Links con sus redes correspondientes con sus iconos -->
+            <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/logo_redes/instagram.png" alt="Instagram" width="30" height="auto"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/logo_redes/facebook.png" alt="Facebook" width="30" height="auto"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../imagenes/logo_redes/twitter.png" alt="Twitter" width="30" height="auto"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img src="../imagenes/logo_redes/tik-tok.png" alt="TikTok" width="30" height="auto"></a>
+        </div> <!-- Div con un párrafo -->
+        <p>Aviso Legal  |  Política de Privacidad</p>
+    </footer>
+</body>
+</html>
